@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.bigbox{
+				width: 1300px;
+				margin: 0 auto;
+			}
+			.box1{
+				width: 1300px;
+				height: 80px;
+				margin: auto;
+				margin-bottom: 40px;
+			}
+			.box2{
+				width: 1300px;
+				min-width: 1300px;
+				margin: auto;
+				margin-bottom: 20px;
+			}			
+			.box3{
+				width: 1300px;
+				min-width: 1300px;
+				margin: auto;
+				height: 100px;
+				overflow: hidden;
+				margin-bottom: 6px;
+			}
+			.box4{
+				width: 1300px;
+				height: 500px;
+				min-width: 1300px;
+				margin: auto;
+				margin-bottom: 9px;
+			}
+			.nav-mod{
+				height: 45px;
+				font-size: 20px;
+				padding-left: 9px;
+				position: relative;
+				background-color: #1479d7;
+				border-radius: 3px;
+			}
+			.nav-item{
+				width: 75px;
+				float: left;
+				list-style: none;
+				text-align: center;
+				line-height: 44px;
+				font-size: 20px;
+			}
+			.a1:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a1:hover{
+				color: aliceblue;
+			}
+			.a2:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a2:hover{
+				color: aliceblue;
+			}
+			.a3:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a3:hover{
+				color: aliceblue;
+			}
+			.a4:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a4:hover{
+				color: aliceblue;
+			}
+			.a5:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a5:hover{
+				color: aliceblue;
+			}
+			.a6:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a6:hover{
+				color: aliceblue;
+			}
+			.a7:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a7:hover{
+				color: aliceblue;
+			}
+			.a8:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a8:hover{
+				color: aliceblue;
+			}
+			.a9:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a9:hover{
+				color: aliceblue;
+			}
+			.a10:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a10:hover{
+				color: aliceblue;
+			}
+			.a11:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a11:hover{
+				color: aliceblue;
+			}
+			.a12:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a12:hover{
+				color: aliceblue;
+			}
+			.a13:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a13:hover{
+				color: aliceblue;
+			}
+			.a14:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color:  black;
+			}
+			.a14:hover{
+				color: aliceblue;
+			}
+			.a15:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a15:hover{
+				color: aliceblue;
+			}
+			.a16:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a16:hover{
+				color: aliceblue;
+			}
+			.a17:link{
+				text-decoration: none;
+				line-height: 44px;
+				display: block;
+				
+				color: black;
+			}
+			.a17:hover{
+				color: aliceblue;
+			}
+			.leftbox{
+				float: left;
+				width: 420px;
+			}
+			.midbox{
+				float: left;
+				width: 420px;
+				margin-left: 15px;
+			}
+			.rightbox{
+				float: left;
+				width: 420px;
+				margin-left: 15px;
+			}
+			.topnews{
+				list-style: none;
+				line-height: 28px;
+				font-size: 15px;
+				color: black;
+				text-decoration: none;
+			}
+			.midnews{
+				list-style: none;
+				line-height: 28px;
+				font-size: 15px;
+				color: #222;
+			}
+			.midtop{
+				list-style: none;
+				line-height: 28px;
+				font-size: 15px;
+				color: #222;
+			}
+			.l1{
+				text-decoration: none;line-height: 28px;display: block;font-size: 15px;color: #222;
+			}
+			.l2{
+				text-decoration: none;line-height: 28px;display: block;font-size: 15px;color: #222;
+			}
+			.l3{
+				text-decoration: none;line-height: 28px;display: block;font-size: 15px;color: #222;
+			}
+			.l4{
+				text-decoration: none;line-height: 28px;display: block;font-size: 15px;color: #222;
+			}
+			.l5{
+				text-decoration: none;line-height: 28px;display: block;font-size: 15px;color: #222;
+			}
+			.l6{
+				text-decoration: none;line-height: 28px;display: block;font-size: 15px;color: #222;
+			}
+			.l1:hover{
+				color: #1479D7;
+			}
+			.l2:hover{
+				color: #1479D7;
+			}
+			.l3:hover{
+				color: #1479D7;
+			}
+			.l4:hover{
+				color: #1479D7;
+			}
+			.l5:hover{
+				color: #1479D7;
+			}
+			.l6:hover{
+				color: #1479D7;
+			}
+			.line{
+				padding: 0 5px;
+				color: #e9e9e9;
+			}
+			.b2{
+				text-decoration: none;line-height: 28px;font-size: 15px;color: #222;
+			}
+			.b2:hover{
+				color: #1479D7;
+			}
+			.b1{
+				text-decoration: none;font-weight: bold;color: #253e64;line-height: 28px;font-size: 15px;
+			}
+			.b1:hover{
+				color: #0c82ff;
+			}
+			.search{
+				width: 500px;
+				height: 32px;
+				float: left;
+				border-radius: 20px;
+				margin-top: 30px;
+				border: 1px solid black;
+				border-radius: 20px;
+				margin-left: 150px;
+			}
+			.in{
+				padding: 2px 2px 2px 0px;
+				margin-left: 0;
+				
+			}
+			input{
+				float: left;
+				font-size: 14px;
+				line-height: 22px;
+				border: 0;
+				width: 280px;
+				height: 20px;
+				padding: 4px 10px;
+				background-color: #f3f6f8;
+			}
+			.wy{
+				padding: 6px 19px;
+				font-size: 16px;
+				height: 100%;
+				width: 50px;
+				float: left;
+			}
+			.toplogo{
+				width: 300px;
+				height: 70px;
+				float: left;
+			}
+			button{
+				position: relative;
+				right: 0;
+				top: -5px;
+				color: #fff;
+				background-color: #1479d7;
+				border-radius: 30px;
+				border: none;
+				height: 34px;
+				width: 110px;
+				float: right;
+				font-size: 16px;
+				padding: 0 23px;
+			}
+			.topnews1{
+				font-size: 15px;
+				font-weight: bold;
+				list-style: none;
+				line-height: 28px;
+			}
+			.asd{
+				height: 34px;
+				line-height: 40px;
+				border-bottom: 1px solid #cae0f3;
+			}
+			.rightbox1{
+				border: 1px solid #cae0f3;
+				font-size: 15px;
+			}
+			.asd li{
+				display: inline-block;
+				float: left;
+				margin-left: 20px;
+				line-height: 35px;
+			}
+			.asd a{
+				text-align: center;
+				text-decoration: none;
+				color: #000000;
+			}
+			li a:hover{
+				color: #0c82ff;
+			}
+			#xb1{
+				background-image: url(icons.png);
+				background-position: right -290px;
+				background-repeat: no-repeat;
+			}
+			#xb2{
+				background-image: url(icons.png);
+				background-position: right -340px;
+				background-repeat: no-repeat;
+			}
+			#xb3{
+				background-image: url(icons.png);
+				background-position: right -386px;
+				background-repeat: no-repeat;
+			}
+			#xb4{
+				background-image: url(icons.png);
+				background-position: right -440px;
+				background-repeat: no-repeat;
+			}
+			.rightlogo{
+				width: 120px;
+				float: right;
+				margin: 22px 0 0;
+			}
+			.logobox{
+				width: 40px;
+				position: relative;
+				float: left;
+			}
+			#lg1 a:link{
+				background-image: url(icons.png);
+				background-position: 0 -93px;
+				background-repeat: no-repeat;
+			}
+			#lg1 a:hover{
+				background-image: url(icons.png);
+				background-position: 0 -143px;
+				background-repeat: no-repeat;
+			}
+			#lg2 a:link{
+				background-image: url(icons.png);
+				background-position: 0 -188px;
+				background-repeat: no-repeat;
+			}
+			#lg2 a:hover{
+				background-image: url(icons.png);
+				background-position: 0 -238px;
+				background-repeat: no-repeat;
+			}
+			.logobox a{
+				list-style: none;
+				width: 35px;
+				height: 40px;
+				display: inline-block;
+			}
+			.c1{
+				position: relative;
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				border: 1px solid #ededed;
+				color: #60a5e4;
+				background-color: #f5f5f5;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			.toplogo{
+				width: 300px;
+				height: 80px;
+				margin-top: 20px;
+				float: left;
+			}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div class="bigbox">
+			<div class="box1">
+				<div class="toplogo">
+					<a href="" target="_blank">
+						<img width="100%"  alt="湘潭大学新闻网" src="logo_school.png" />
+					</a>
+				</h1>
+				</div>
+				<div class="search">
+					<div class="wy">网页</div>
+					<div class="in"><input type="text"></div>
+					<div class="bu"><button>搜狗搜索</button></div>
+				</div>
+				<div class="rightlogo">
+					<div class="logobox" id="lg1"><a href=""></a></div>
+					<div class="logobox" id="lg2"><a href=""></a></div>
+					<div class="logobox"><a class="c1" href="">登陆</a></div>
+				</div>
+			</div>
+			<div class="box2">
+				<div class="nav-mod">
+					<ul class="nav" style="line-height: 44px;">
+						<li class="nav-item"><a class="a1" href="/" target="_blank">新闻</a></li>
+						<li class="nav-item"><a class="a2" href="/" target="_blank">视频</a></li>
+						<li class="nav-item"><a class="a3" href="/" target="_blank">图片</a></li>
+						<li class="nav-item"><a class="a4" href="/" target="_blank">军事</a></li>
+						<li class="nav-item"><a class="a5" href="/" target="_blank">体育</a></li>
+						<li class="nav-item"><a class="a6" href="/" target="_blank">NBA</a></li>
+						<li class="nav-item"><a class="a7" href="/" target="_blank">娱乐</a></li>
+						<li class="nav-item"><a class="a8" href="/" target="_blank">财经</a></li>
+						<li class="nav-item"><a class="a9" href="/" target="_blank">科技</a></li>
+						<li class="nav-item"><a class="a10" href="/" target="_blank">时尚</a></li>
+						<li class="nav-item"><a class="a11" href="/" target="_blank">汽车</a></li>
+						<li class="nav-item"><a class="a12" href="/" target="_blank">房产</a></li>
+						<li class="nav-item"><a class="a13" href="/" target="_blank">教育</a></li>
+						<li class="nav-item"><a class="a14" href="/" target="_blank">文化</a></li>
+						<li class="nav-item"><a class="a15" href="/" target="_blank">游戏</a></li>
+						<li class="nav-item"><a class="a16" href="/" target="_blank">星座</a></li>
+						<li class="nav-item"><a class="a17" href="/" target="_blank">更多</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="box3">
+				<div class="class1" style="width: 800px;height: 150px;float: left;">
+					<a href="http://www.xtu.edu.cn/" target="_blank"><img src="图片1.png" height="100px" width="800px"></a>
+				</div>
+				<div class="class2" style="width: 200px;height: 150px;float: left;margin-left: 30px;">
+					<a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank"><img src="ninja153907291410277.png" height="100px" width="470px"></a>
+				</div>
+			</div>
+			<div class="box4">
+				<div class="leftbox">
+					<div style="width: 420px;height: 43px;border-bottom: 1px solid #cae0f3;">
+						<h2 style="color: #1479d7;margin: 0 14px;display: inline-block;height: 40px;border-bottom: 4px solid #1479d7;">要闻</h2>
+					</div>
+					<div class="yw" style="display: block;line-height: 28px;font-size: 12px;">
+						<ul class="ywlist1">
+							<li class="topnews1"><a class="l1" href="http://news.xtu.edu.cn/html/jiaoxueky/show_11148.html" target="_blank" >我校承办第十四届全国流变学学术会议</a></li>
+							<li class="topnews"><a class="l2" href="http://news.xtu.edu.cn/html/zonghexw/show_11120.html" target="_blank" >400名专家学者汇聚湘潭 研讨工程安全防灾减灾新理念新技术</a></li>
+							<li class="topnews"><a class="l3" href="http://news.xtu.edu.cn/html/zonghexw/show_11114.html" target="_blank" >聚焦中国信用法律体系建设 首届信用法治•韶山论坛在韶山举办</a></li>
+							<li class="topnews"><a class="l4" href="http://news.xtu.edu.cn/html/zonghexw/show_11096.html" target="_blank" >军训总结表彰大会：浩然书生气 沙场秋点兵</a></li>
+							<li class="topnews"><a class="l5" href="http://news.xtu.edu.cn/html/zonghexw/show_11073.html" target="_blank" >湖南省大学生红色经典诵读活动在我校启动</a></li>
+							<li class="topnews"><a class="l6" href="http://news.xtu.edu.cn/html/zonghexw/show_11018.html" target="_blank" >20所中外大学校长聚首湘大 探讨新时代高等教育发展</a></li>
+						</ul>
+						
+						<ul class="ywlist2">
+							<liclass="midnews">
+								<div style="width: 420px;height: 120px;;margin-top: 10px;">
+							        <div style="width: 300px;height: 100px;float: left;"><a href="http://news.xtu.edu.cn/html/xiaoyuansh/show_11163.html" target="_blank"><img src="zftuf2n3ba.jpg" width="200px" height="100px"></a></div>
+						            <div style="width: 180px;height: 100px;float: left;margin-left: -80px;"><a href="http://news.xtu.edu.cn/html/xiaoyuansh/show_11163.html" target="_blank" class="l1" >我校学子开展“保护母亲河，河小青在行动“实践活动</a></div>
+						        </div>
+						    </li>
+						    <li class="midnews"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11087.html" target="_blank" class="l2">谭建荣院士受聘为我校“特聘教授”“双聘院士”</a></li>
+					        <li class="midnews"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11151.html" target="_blank" class="l3">湘潭大学体育发展基金成立 4位校友捐赠第一笔赠款</a></li>
+						    <li class="midnews"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11139.html" target="_blank" class="l4">我校召开学位授权点建设工作推进会</a></li>
+						    <li class="midnews"><a href="http://news.xtu.edu.cn/html/zonghexw/show_11147.html" target="_blank" class="l5">青春无畏 逐梦扬威：“洋光杯”新生定向越野大赛举行</a></li>
+					    </ul>	
+					</div>
+				</div>
+				<div class="midbox">
+					<div style="width: 420px;height: 43px;border-bottom: 1px solid #cae0f3;">
+						<h3 style="color: #1479d7;margin: 0 14px;display: inline-block;height: 40px;border-bottom: 4px solid #1479d7;font-size: 25px;">今日话题</h3>
+					</div>
+					<div class="jnht">
+						<ul class="jnht1">
+						   <li class="midtop">
+						   	<a class="b1" href="http://news.xtu.edu.cn/html/meitigz/show_11164.html" target="_blank">湖南经视</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="http://news.xtu.edu.cn/html/meitigz/show_11164.html" target="_blank">湖南 大学生热议：正青春 向梦想迈进</a>
+						   </li>
+						   <li class="midtop">
+						   	<a class="b1" href="http://news.xtu.edu.cn/html/meitixd/show_11159.html" target="_blank">红网</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="http://news.xtu.edu.cn/html/meitixd/show_11159.html" target="_blank">2018年中部地区第十一届摩擦学学术论坛在湘潭举办</a>
+						   </li>
+						   <li class="midtop">
+						   	<a class="b1" href="http://news.xtu.edu.cn/html/meitixd/show_11158.html" target="_blank">新湖南</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="http://news.xtu.edu.cn/html/meitixd/show_11158.html" target="_blank">【百家讲坛 平语近人】第一集思想解读人湘潭大学校友郭建宁教授</a>
+						   </li>
+						   <li class="midtop">
+						   	<a class="b1" href="http://news.xtu.edu.cn/html/meitixd/show_11157.html" target="_blank">新湖南</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="http://news.xtu.edu.cn/html/meitixd/show_11157.html" target="_blank">湖南省本科院校“双一流”建设项目名单公布</a>
+						   </li>
+					    </ul>
+					    <ul class="jnht2">
+					    	<li class="midnews">
+					    		<div style="width: 420px;height: 120px;;margin-top: 10px;">
+							        <div style="width: 300px;height: 100px;float: left;"><a href="https://new.qq.com/omn/20181029/20181029A1PI9Y.html" target="_blank"><img src="ninja154085980478893.jpg" width="200px" height="100px"></a></div>
+						            <div style="width: 180px;height: 100px;float: left;margin-left: -80px;"><a href="https://new.qq.com/omn/20181029/20181029A1PI9Y.html" target="_blank" class="l1" >南海海域，解放军陆海空联合演习有何深意</a></div>
+						        </div>
+					    	</li>
+					    	<li class="midtop">
+						   	<a class="b1" href="https://new.qq.com/omn/20181029/20181029A1AJYT.html" target="_blank">一枚石头</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="https://new.qq.com/omn/20181029/20181029A1AJYT.html" target="_blank">二战期间英国空军对德国科伦的“千机大轰炸”，催生了导航系统</a>
+						   </li>
+						   <li class="midtop">
+						   	<a class="b1" href="http://view.inews.qq.com/a/CRI2018103000395900" target="_blank">短史记</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="http://view.inews.qq.com/a/CRI2018103000395900" target="_blank">让李咏大红大紫的《幸运52》，是如何消亡的？</a>
+						   </li>
+						   <li class="midtop">
+						   	<a class="b1" href="https://new.qq.com/cmsn/20181029/20181029013874.html" target="_blank">谷雨</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="https://new.qq.com/cmsn/20181029/20181029013874.html" target="_blank">记忆中的李咏：幽默风趣、睿智淡然，是沉默的体面</a>
+						   </li>
+						   <li class="midtop">
+						   	<a class="b1" href="https://new.qq.com/omn/20181029/20181029A09MEB.html" target="_blank">时尚圈</a>
+						   	<span class="line">|</span>
+						   	<a class="b2" href="https://new.qq.com/omn/20181029/20181029A09MEB.html" target="_blank">90后还能好好穿衣服吗？</a>
+						   </li>
+					    </ul>
+					</div>
+				</div>
+				<div class="rightbox">
+					<div class="rightbox1">
+						<div class="asd" id="xb1">
+							<li><a href="">易班</a></li>
+							<li><a href="">腾讯视频</a></li>
+							<li><a href="">QQ</a></li>
+							<li><a href="">芒果TV</a></li>
+							<li><a href="">拱拱</a></li>
+							<li><a href="">韩剧TV</a></li>
+						</div>
+						<div class="asd" style="background-color: #f5f8fc;" id="xb2">
+							<li><a href="">学习通</a></li>
+							<li><a href="">WPS Office</a></li>
+							<li><a href="">星火英语</a></li>
+							<li><a href="">微博</a></li>
+							<li><a href="">新闻APP</a></li>
+						</div>
+						<div class="asd" id="xb3">
+							<li><a href="">律动APP</a></li>
+							<li><a href="">有道词典</a></li>
+							<li><a href="">高德地图</a></li>
+							<li><a href="">携程旅行</a></li>
+							<li><a href="">美团</a></li>
+						</div>
+						<div class="asd" style="background-color: #f5f8fc;" id="xb4">
+							<li><a href="">微信</a></li>
+							<li><a href="">淘宝</a></li>
+							<li><a href="">QQ音乐</a></li>
+							<li><a href="">抖音</a></li>
+							<li><a href="">网易云音乐</a></li>
+							<li><a href="">更多</a></li>
+						</div>
+					</div>
+					<div style="width: 420px;height: 43px;border-bottom: 1px solid #cae0f3;">
+						<h3 style="color: #1479d7;margin: 0 14px;display: inline-block;height: 40px;border-bottom: 4px solid #1479d7;font-size: 25px;">今日娱乐</h2>
+						<span class="span1" style="color: #3d82f8;font-size: 14px;">10月31日</span>
+						<span class="line">|</span>
+						<span class="span2" style="font-size: 14px;">早上好，今天有一则娱乐新闻</span>
+					</div>
+					<div style="width: 420px;height: 230px;margin-top: 5px;">
+						<a href="https://new.qq.com/omn/20181030/20181030A1180D.html#p=1" target="_blank">
+							<img src="untitled.png" width="420px" height="230px">
+						</a>
+					</div>
+					<div style="font-size: 15px;margin-top: 10px;">
+						<a class="b2" href="https://new.qq.com/omn/20181030/20181030A1180D.html#p=1" target="_blank">唐嫣婚后首曝清新写真 眼神透着娇俏少女感满满</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
