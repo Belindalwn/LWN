@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			tr:first-child{
+				background-color: dodgerblue !important;
+			}
+			tr:nth-child(2n){
+				background-color: aliceblue
+			}
+			tr:nth-child(2n-1){
+				background-color: whitesmoke
+			}
+			p{
+				display: inline-block;
+				font-size: 20px;
+			}
+			button{
+				width: 120px;
+				height: 30px;
+				font-size: 20px;
+				border-radius: 30px;
+				background-color: aqua;
+				border: 0;
+			}
+			tr{
+				height: 50px;
+			}
+		</style>
+		</head>
+	<body>
+		<script>
+			 var count = 4;
+
+			function add() {
+				newtr = document.createElement("tr");
+				ta = document.getElementById("table");
+				ta.appendChild(newtr);
+				th1 = document.createElement("th");
+				td2 = document.createElement("td");
+				td3 = document.createElement("td");
+				td4 = document.createElement("td");
+				newtr.appendChild(th1);
+				newtr.appendChild(td2);
+				newtr.appendChild(td3);
+				newtr.appendChild(td4);
+				xm = document.myform.xingming.value;
+				sexm = document.myform.sex.value;
+				th1.innerHTML = count;
+				count++;
+				td2.innerHTML = xm;
+				td3.innerHTML = sexm;
+				newa = document.createElement("a");
+				td4.appendChild(newa);
+				newa.setAttribute("href", "javascript:(0);");
+				newa.setAttribute("onclick", "deleteRow(this)");
+				newa.innerHTML = "删除";
+			}
+
+		</script>
+			
+		<form name="myform">
+			<p>姓名<input type="text" name="xingming" id="xm"/></p>
+			<p id="sexm"><input type="radio" name="sex" value="男" >男<input type="radio" name="sex" value="女" >女</p>
+			
+		</form>
+		<button onclick="add()">增加按钮</button>
+		<table id="table" width="80%" border="1px" cellspacing="0"  >
+			<tr height="50px" class="tr">
+				<th>编号</th>
+				<td>姓名</td>
+				<td>性别</td>
+				<td>操作</td>
+			</tr>
+			<tr height="50px" class="even">
+				<th>1</th>
+				<td id="xm1">张三</th>
+				<td>男</td>
+				<td><a href="javascript:(0);" onclick="deleteRow(this)" >删除</a></td>
+			</tr>
+			<tr height="50px" class="odd">
+				<th>2</th>
+				<td id="xm2">李四</td>
+				<td>女</td>
+				<td><a href="javascript:(0);" onclick="deleteRow(this)" >删除</a></td>
+			</tr>
+			<tr height="50px" class="even">
+				<th>3</th>
+				<td id="xm3">王五</td>
+				<td>男</td>
+				<td><a href="javascript:(0);" onclick="deleteRow(this)" >删除</a></td>
+			</tr>
+		</table>
+		<script>
+			document.getElementById("xm1").onmousemove=function(){
+					document.getElementById("xm1").style.color="red";
+				}
+			document.getElementById("xm1").onmouseout=function(){
+					document.getElementById("xm1").style.color="black";
+				}
+			document.getElementById("xm2").onmousemove=function(){
+					document.getElementById("xm2").style.color="red";
+				}
+			document.getElementById("xm2").onmouseout=function(){
+					document.getElementById("xm2").style.color="black";
+				}
+			document.getElementById("xm3").onmousemove=function(){
+					document.getElementById("xm3").style.color="red";
+				}
+			document.getElementById("xm3").onmouseout=function(){
+					document.getElementById("xm3").style.color="black";
+			}
+			
+           function deleteRow(obj) {
+           	var tab = obj.parentNode.parentNode.parentNode;
+           	var tr = obj.parentNode.parentNode;
+           	tab.removeChild(tr);
+           }
+		</script>
+		
+	</body>
+</html>
