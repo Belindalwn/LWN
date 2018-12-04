@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>热门业务</title>
+		<style>
+			body {
+				border: none;
+				margin: 0;
+				background-image: url(爱心背景.jpg);
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.contentbox {
+				width: 960px;
+				height: auto;
+				margin: auto;
+				margin-top: 2em;
+				clear: left;
+			}
+			
+			.qcontainer {
+				-webkit-perspective: 400;
+				-moz-perspective: 400;
+				float: left;
+				width: 310px;
+				margin-right: 10px;
+				margin-top: 30px;
+			}
+			
+			.film {
+				width: 100%;
+				height: 300px;
+				-webkit-transform-style: preserve-3d;
+				-webkit-transition: 1.5s;
+				-moz-transform-style: preserve-3d;
+				-moz-transition: 1.5s;
+			}
+			
+			.qcontainer:hover .film {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+			}
+			
+			.face {
+				position: absolute;
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+			}
+			
+			.face h3 {
+				color: white;
+				text-align: center;
+			}
+			
+			.back {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				background: -webkit-gradient(linear, left top, left bottom, from(#fdbb5a), to(#db5726));
+				background: -moz-linear-gradient(top, #fdbb5a, #db5726);
+				width: 220px;
+				height: 300px;
+			}
+			
+			.foot {
+				text-align: center;
+				color: #fff;
+				position: fixed;
+				bottom: 20px;
+				left: 50%;
+				margin-left: -126px;
+				font-size: 12px;
+				font-family: "微软雅黑"；
+			}
+			img{
+				width: 220px;
+				height: 300px;
+			}
+			.a{width: 960px;text-align: center;font-size: 22px;}
+			a{text-decoration: none;color: blue;}
+			a:hover{color: red;}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="contentbox">
+			<div class="qcontainer">
+				<div class="film">
+					<div class="face front"><img src="演唱会竖屏.jpg"></div>
+					<div class="face back">
+						<h3>演唱会</h3>
+						<p>我们的热门业务之一：我们为您提供爱豆的演唱会门票，创造见偶像的机会。</p>
+					</div>
+				</div>
+			</div>
+			<div class="qcontainer">
+				<div class="film">
+					<div class="face front"><img src="生日会竖屏.jpg"></div>
+					<div class="face back">
+						<h3>生日会</h3>
+						<p>我们的热门业务之一：我们提供偶像生日会门票，实现为偶像庆祝生日的愿望。</p>
+					</div>
+				</div>
+			</div>
+			<div class="qcontainer">
+				<div class="film">
+					<div class="face front"><img src="粉丝见面会竖屏.jpg"></div>
+					<div class="face back">
+						<h3>粉丝见面会</h3>
+						<p>我们的热门业务之一：我们让您提前抢到见偶像的名额，与偶像近距离互动。</p>
+					</div>
+				</div>
+			</div>
+			<div class="qcontainer">
+				<div class="film">
+					<div class="face front"><img src="专辑竖屏.jpg"></div>
+					<div class="face back">
+						<h3>专辑见面会</h3>
+						<p>我们的热门业务之一：我们不仅提供见面会门票，而且为您抢到偶像专辑，让粉丝现场拿到偶像签名。</p>
+					</div>
+				</div>
+			</div>
+			<div class="qcontainer">
+				<div class="film">
+					<div class="face front"><img src="跨年演唱会竖屏.jpg"></div>
+					<div class="face back">
+						<h3>跨年演唱会</h3>
+						<p>我们的热门业务之一：不仅能让粉丝见到偶像，而且能让粉丝度过一个难忘的跨年，见到许多其他的明星。</p>
+					</div>
+				</div>
+			</div>
+			<div class="qcontainer">
+				<div class="film">
+					<div class="face front"><img src="颁奖典礼竖屏.jpg"></div>
+					<div class="face back">
+						<h3>颁奖盛典</h3>
+						<p>我们的热门业务之一：我们提供颁奖盛典门票，让粉丝亲眼见到偶像的光辉时刻。</p>
+					</div>
+				</div>
+			</div>
+			<div class="a"><a href="全部业务.html" target="_blank">更多业务</a></div>
+		</div>
+
+	</body>
+
+</html>

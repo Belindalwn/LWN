@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			p{
+				font-size: 18px;
+			}
+			button.xx {
+				background-color: fuchsia;
+				color: #444;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				height: 60px;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 16px;
+				transition: 0.4s;
+			}
+			button.xx:hover {
+				background-color: #00FFFF;
+			}
+			
+			div.panel {
+				padding: 0 18px;
+				background-color: white;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.2s ease-out;
+			}
+			#bigbox{
+				width: 960px;
+				margin: auto;
+			}
+			.picture{
+				height: 850px;
+				width: 960px;
+				background-image: url(心.jpg);
+			}
+			h1{
+				text-align: center;
+				margin-top: 50px;
+				padding: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+	<div id="bigbox">
+		<button class="xx">如何预约</button>
+		<div class="panel">
+			<p>1.拨打我们的电话：66688869888提前进行预约。</p>
+			<p>2.登陆自己的账号在本网站上进行网上预约。</p>
+		</div>
+
+		<button class="xx">业务如何进行</button>
+		<div class="panel">
+			<p>确定好人数后由本公司向客户所填地址邮寄相关门票，同时提前短信通知客户具体时间和地点。</p>
+			<p><strong>客户必须填写清楚具体的业务以及自己喜欢的明星。</strong></p>
+		</div>
+
+		<button class="xx">收费方面</button>
+		<div class="panel">
+			<p>本公司与明星所在公司属于合作关系，收费绝对合乎情理，绝不提供虚假信息，绝不故意抬高价格。</p>
+		</div>
+		<button class="xx">售后服务</button>
+		<div class="panel">
+			<p>客户所选择的业务结束后，本公司会赠送相应的纪念品以及明星签名照。</p>
+			<p><strong>若客户对业务不满意，本公司全额退款。</strong></p>
+		</div>
+		<div class="picture">
+			<h1>看完我们的业务是不是心动了！</h1>
+			<h1>心动不如行动</h1>
+			<h1>赶快选择我们吧！</h1>
+		</div>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("xx");
+		var i;
+
+		for(i = 0; i < acc.length; i++) {
+			acc[i].onclick = function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if(panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			}
+		}
+	</script>
+</body>
+</html>

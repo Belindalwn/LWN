@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.dh {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: black;
+				position: fixed;
+				top: 0;
+				width: 960px;
+				height: 60px;
+			}
+			
+			.as {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 25px;
+			}
+			
+			.as:hover {
+				background-color: #111;
+				color: red;
+			}
+			
+			#bigbox {
+				width: 960px;
+				margin: auto;
+			}
+			
+			.a {
+				float: left;
+			}
+			
+			.tl {
+				float: left;
+				color: deeppink;
+				font-family: "blackadder itc";
+				font-size: 22px;
+			}
+			
+			.tm {
+				float: left;
+				color: white;
+				font-size: 18px;
+				margin-top: 18px;
+			}
+			
+			.tr {
+				float: right;
+				margin-top: 20px;
+				border-radius: 20px;
+				border: 1px solid white;
+				background-color: white;
+			}
+			
+			.in {
+				float: left;
+			}
+			
+			.search {
+				float: right;
+			}
+			
+			button {
+				border-radius: 30px;
+				font-size: 16px;
+				background-color: hotpink;
+			}
+			
+			.sp {
+				float: left;
+				width: 50px;
+				font-size: 18px;
+			}
+			h1{
+				text-align: center;
+				color: #FF1493;
+			}
+			.xin{
+				
+				margin-top: 10px;
+			}
+			h2{
+				text-align: center;
+			}
+			.buttombox{
+				width: 960px;
+				height: 100px;
+				background-color: #000000;
+				color: white;
+				margin-top: 10px;
+			}
+			.bl{
+				float: left;
+				width: 320px;
+				height: 100px;
+			}
+			.bm{
+				float: left;
+				width: 320px;
+				height: 100px;
+			}
+			.br{
+				float: left;
+				width: 320px;
+				height: 100px;
+			}
+			.sg{
+				text-align: center;
+				font-size: 26px;
+				margin-top: 6px;
+				transition: all 0.1s;
+				text-shadow: 1px 1px 1px aqua;
+			}
+			.sg:hover{text-shadow: 6px 6px 6px #FF0000;}
+			.mySlides {display:none}
+ 
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-top: 70px;
+}
+ 
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+ 
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+
+ 
+
+
+
+ 
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="bigbox">
+			<div class="dh">
+				<div class="tl">
+					<div>Idol Zero</div>
+					<div>与爱豆同行</div>
+				</div>
+				<div class="a">
+					<a href="#" class="as">主页</a>
+				</div>
+				<div class="a">
+					<a href="热门业务.html" target="_blank" class="as">热门业务</a>
+				</div>
+				<div class="a">
+					<a href="全部业务.html" target="_blank" class="as">全部业务</a>
+				</div>
+				<div class="a">
+					<a href="关于业务.html" target="_blank" class="as">关于业务</a>
+				</div>
+				<div class="tm">登陆<span>|</span>注册</div>
+				<div class="tr">
+					<div class="sp">业务</div>
+					<div class="in"><input type="text" /></div>
+					<div class="search"><button>搜索</button></div>
+				</div>
+			</div>
+			
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					
+					<img src="timg2PSXZ9RO.jpg" style="width:100%">
+					
+				</div>
+
+				<div class="mySlides fade">
+					
+					<img src="timgSETAHVZ6.jpg" style="width:100%">
+					
+				</div>
+
+				<div class="mySlides fade">
+					
+					<img src="timgXILHQQ08.jpg" style="width:100%">
+					
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+			<div>
+				<h1>你知道吗，粉丝与偶像之间是一种很奇妙的缘分！</h1>
+				<h1>我们为您实现这种缘分！</h1>
+			</div>
+			<div class="xin">
+				<h2>当喜欢上偶像的那刻起缘分就开始了</h2>
+				<p class="sg">你是否为追星无结果而烦恼？</p>
+				<p class="sg">你是否为无法见到偶像而伤心？</p>
+				<p class="sg">不要担心，我们都能为您实现！</p>
+				<div class="zp">
+					<div class="wz"><marquee><font size="6" color="red">无论是明星演唱会</font></marquee></div>
+					<div class="tp"><img src="exo.jpg" style="width: 960px;height: 550px;"></div>
+				</div>
+				<div class="zp">
+					<div class="wz"><marquee><font size="6" color="red">还是作品签售会</font></marquee></div>
+					<div class="tp"><img src="签售会.jpg" style="width: 960px;height: 550px;"/></div>
+				</div>
+				<div class="zp">
+					<div class="wz"><marquee><font size="6" color="red">或者是专辑发布会</font></marquee></div>
+					<div class="tp"><img src="发布会.jpg" style="width: 960px;height: 550px;"/></div>
+				</div>
+				<p class="sg">只要您使用我们项目，我们就能让你见到偶像！</p>
+			</div>
+		<div class="buttombox">
+			<div class="bl">
+				<h3>关于我们</h3>
+				<p>我们是与明星公司合作的正规公司</p>
+				<p>价格公正</p>
+				<p>拒绝黄牛高价票</p>
+			</div>
+			<div class="bm">
+				<h3>客户服务</h3>
+				<p>常见问题</p>
+				<p>联系电话</p>
+				<p>66688869888</p>
+			</div>
+			<div class="br">
+			    <h3>公司地址：湘潭大学南苑5栋</h3>
+			    <p>创始人：李玮娜</p>
+			    <p>版权所有</p>
+			    <p>侵权必究</p>
+			</div>
+		</div>
+	</div>
+		<script>
+			var slideIndex = 0;
+showSlides();
+ 
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000);
+}
+		</script>
+	</body>
+</html>
